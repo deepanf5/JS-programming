@@ -225,3 +225,15 @@ let sortBY = (num) => {
 }
 
 console.log(sortBY(numbers));
+
+16 Answer
+let target = 5;
+let number = [1,5,2,8,2,20,4,3];
+
+for(let i = 0; i < number.length; i++) {
+  for(let j = i + 1; j < number.length; j++) {
+    if(number[i] + number[j] === target) {
+      console.log(`${number[i]} + ${number[j]} = ${number[i] + number[j]}`)
+    }
+  }
+}
