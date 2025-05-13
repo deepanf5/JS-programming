@@ -182,3 +182,36 @@ let countFreq = (num) => {
 }
 
 console.log(countFreq(number))
+
+13 Answer
+let str = "mark Antony good bad ugly";
+
+let converPascal = (str) => {
+  
+return str.split(' ').map((w) => {
+ return  w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()
+}).join('')
+
+}
+
+
+console.log(converPascal(str));
+
+14 Answer
+let number = [1,5,10];
+
+let findMiss = (num) => {
+  let result = [];
+  let start = num[0];
+  let end = num[num.length - 1];
+  
+  for(let i = start; i < end; i++) {
+    if(!num.includes(i)) {
+      result.push(i)
+    }
+  }
+  
+  return result;
+}
+
+console.log(findMiss(number));
