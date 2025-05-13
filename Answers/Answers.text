@@ -237,3 +237,32 @@ for(let i = 0; i < number.length; i++) {
     }
   }
 }
+
+17 Answer
+
+let numbers = [-9,0,5,1];
+let sum = 0;
+
+let sumPositive = (num) => {
+  
+  num.forEach((n) => {
+    if(n > 0) {
+      sum += n;
+      
+    }
+  })
+  
+  return sum
+}
+console.log(sumPositive(numbers));
+
+18 
+const str = "This is a test string with vowels";
+const vowels = "aeiouAEIOU"
+
+let removevowels = (str) => {
+  
+  return str.split('').filter((l) => !vowels.includes(l)).join('')
+}
+
+console.log(removevowels(str));
