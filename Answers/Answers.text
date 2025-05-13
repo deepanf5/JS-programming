@@ -135,3 +135,17 @@ for(let i = 0; i < numbers.length; i++) {
 }
 
 console.log(unique);
+
+10. Answer
+let str = "racecar";
+let freq = {}
+
+let freqCount = (str) => {
+  str.split('')
+  .forEach((l) => {
+   freq[l] = (freq[l] || 0) + 1;
+  })
+   return freq
+}
+
+console.log(freqCount(str));
