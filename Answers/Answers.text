@@ -104,3 +104,14 @@ for(let i = 2; i < limit; i++) {
   num2 = nextNum;
   nextNum = num1 + num2;
 }
+
+8. Answer
+let array = [[1,664,243],[9,-5,7]];
+let max = array[0][0];
+
+for(let numbers of array){
+  for(let n of numbers ) {
+    if(max < n) max = n
+  }
+}
+console.log(`Max is ${max}`);
