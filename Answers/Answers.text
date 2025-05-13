@@ -56,3 +56,38 @@ while(number) {
 if(temp === sum) console.log("prime number")
 else console.log("Not a prime number");
 
+
+5. Answer
+let number = 7;
+let isPrime = true;
+
+for(let i = 2; i < number; i++) {
+  if(number % i === 0) {
+    isPrime = false;
+    break;
+  }
+}
+if(isPrime) console.log(`${number} is Prime`)
+else console.log(`${number} is not Prime`)
+
+6. Answer
+let limit = 40;
+
+let checkPrime = (number) => {
+    if(number < 2) return false;
+    for(let i = 2; i < number; i++) {
+      if(number % i === 0) return false
+    }
+    
+  return true;
+}
+
+let printPrimes = (limit) => {
+  for(let i = 0; i < limit; i++) {
+    if(checkPrime(i)) {
+      console.log(`${i}`);
+    }
+  }
+}
+
+printPrimes(limit);
