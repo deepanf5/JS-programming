@@ -266,3 +266,22 @@ let removevowels = (str) => {
 }
 
 console.log(removevowels(str));
+
+19  Answer
+
+const str = "This is a test string with vowels";
+
+let sortBy = (str) => {
+  
+  return str.split('').sort((a,b) => a.localeCompare(b)).join('').trim()
+}
+
+console.log(sortBy(str));
+
+20 Answer
+
+function sortStrings(arr) {
+  return arr.sort();
+}
+const strings = ["apple", "banana", "cherry", "date", "elderberry"];
+console.log(sortStrings(strings)); 
