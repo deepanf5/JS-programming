@@ -42,4 +42,17 @@ let findPalindrome = (str) => {
 
 console.log(findPalindrome(str));
 
+4. Answer
+let number = 121;
+let temp = number;
+let sum = 0;
+
+while(number) {
+  let rem = number % 10;
+  sum = sum * 10 + rem;
+  number = parseInt(number / 10);
+}
+
+if(temp === sum) console.log("prime number")
+else console.log("Not a prime number");
 
