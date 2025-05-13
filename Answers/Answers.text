@@ -215,3 +215,13 @@ let findMiss = (num) => {
 }
 
 console.log(findMiss(number));
+
+15 Answer
+let numbers = [6,4,2,12,5,0,-1,-8];
+
+let sortBY = (num) => {
+  
+  return num.sort((a,b) => a - b)
+}
+
+console.log(sortBY(numbers));
