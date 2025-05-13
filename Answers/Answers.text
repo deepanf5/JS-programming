@@ -115,3 +115,23 @@ for(let numbers of array){
   }
 }
 console.log(`Max is ${max}`);
+
+9 Answer
+let numbers = [1,1,2,3,4,4,5];
+let unique = [];
+
+for(let i = 0; i < numbers.length; i++) {
+  let currentNum = numbers[i];
+  let isDuplicate = false;
+  
+  for(let j = 0; j < unique.length; j++) {
+    if(currentNum === unique[j]) {
+      isDuplicate = true;
+    }
+  }
+  
+  if(!isDuplicate) unique.push(currentNum);
+
+}
+
+console.log(unique);
