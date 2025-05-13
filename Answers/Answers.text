@@ -165,3 +165,20 @@ let countFreq = (num) => {
 }
 
 console.log(countFreq(num));
+
+11 Answer
+
+let number = [1,2,3,4,5,6,1,5,2,4,8];
+let freq = {}
+
+let countFreq = (num) => {
+  num.forEach((n) => {
+    freq[n] = (freq[n] || 0) + 1;
+  })
+  
+  return Object.fromEntries(
+  Object.entries(freq).filter(([key,val]) => val > 1)
+  )
+}
+
+console.log(countFreq(number))
