@@ -285,3 +285,23 @@ function sortStrings(arr) {
 }
 const strings = ["apple", "banana", "cherry", "date", "elderberry"];
 console.log(sortStrings(strings)); 
+
+
+21 Answer
+
+let a = 5;
+let b = 1;
+
+a = a + b;
+b = a - b;
+a = a - b;
+
+let a = 5;
+let b = 1;
+
+a = a + b;
+b = a - b;
+a = a - b
+
+console.log(a);
+console.log(b);

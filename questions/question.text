@@ -18,3 +18,4 @@
 18.Write a function in JavaScript that takes a string as input and returns a new string with all the vowels removed.
 19. Write a function in JavaScript that takes an array of strings as input and returns with the strings sorted in alphabetical order. 
 20. Write a function in JavaScript that takes an array of strings as input and returns a new array with the strings sorted in alphabetical order. 
+21. Write a program to swap the number without using temp
