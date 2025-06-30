@@ -342,3 +342,14 @@ arr.map(val => {
 return str2
     
 }
+
+24. 
+
+let str = "hello world";
+
+let capitalize = str.split(' ').map((w) => {
+  
+  return w.charAt(0).toUpperCase() + w.slice(1)
+}).join(' ')
+
+console.log(capitalize);
