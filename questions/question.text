@@ -21,3 +21,4 @@
 21. Write a program to swap the number without using temp
 22. You are given two sorted arrays, arr1 and arr2, both in non-decreasing order. Your task is to merge these two arrays into a single sorted array without using any inbuilt sort function.
 23. Given an array of string arr, return the concatenation of all the string exm: ["pro","gra","m","iz"]
+24. transforming the word into capitalize 
