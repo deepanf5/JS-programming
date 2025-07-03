@@ -326,6 +326,16 @@ let sortArray = (arr1,arr2) => {
         }
         
     }
+
+       for(let i  = 0; i < merged.length; i++) {
+        for(let j = i + 1; j < merged.length;j++) {
+            if(merged[j] < merged[i]) {
+                let temp = merged[i]
+                merged[i] = merged[j]
+                merged[j] = temp
+            }
+        }
+    }
     
     return merged
 }
