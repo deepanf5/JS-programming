@@ -363,3 +363,6 @@ let capitalize = str.split(' ').map((w) => {
 }).join(' ')
 
 console.log(capitalize);
+
+
+25 reverse only String
