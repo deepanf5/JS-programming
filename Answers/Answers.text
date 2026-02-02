@@ -365,4 +365,27 @@ let capitalize = str.split(' ').map((w) => {
 console.log(capitalize);
 
 
-25 reverse only String
+25 
+let str = "I am Deepan";
+
+// remove spaces and reverse
+let rev = str.split(" ").join('').split('').reverse().join("");
+
+
+// console.log(rev)
+
+let result = "";
+let index = 0;
+
+// // put letters back, keep spaces same
+for (let i = 0; i < str.length; i++) {
+  if (str[i] === " ") {
+    result += " ";
+  } else {
+    result += rev[index];
+    index++;
+  }
+}
+
+console.log(result);
+
