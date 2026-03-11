@@ -389,3 +389,12 @@ for (let i = 0; i < str.length; i++) {
 
 console.log(result);
 
+26. 
+let fruits = ['apple','banana','kiwi','papaya','guava'];
+
+let  filterBy = (fruits,w) => {
+  return fruits.filter((item) => item.split('a').length > 2)
+}
+
+console.log(filterBy(fruits))
+
