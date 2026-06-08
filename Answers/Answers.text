@@ -398,3 +398,30 @@ let  filterBy = (fruits,w) => {
 
 console.log(filterBy(fruits))
 
+
+27 let books = [
+  {
+    name: "Harry Potter",
+    author: "Joanne Rowling",
+  },
+  {
+    name: "Warcross",
+    author: "Marile lu",
+  },
+  {
+    name: "The Hunger Games",
+    author: "Suzanne Collins",
+  },
+];
+
+let sortBook = (books) => {
+  return books.sort((book1, book2) => {
+    const author1LastName = book1.author.split(" ")[1];
+    const author2LastName = book2.author.split(" ")[1];
+   return author1LastName.localeCompare(author2LastName);
+  });
+};
+
+console.log(sortBook(books));
+
+
