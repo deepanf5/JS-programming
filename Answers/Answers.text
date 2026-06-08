@@ -414,7 +414,7 @@ console.log(filterBy(fruits))
   },
 ];
 
-let sortBook = (books) => {
+28 let sortBook = (books) => {
   return books.sort((book1, book2) => {
     const author1LastName = book1.author.split(" ")[1];
     const author2LastName = book2.author.split(" ")[1];
@@ -423,5 +423,14 @@ let sortBook = (books) => {
 };
 
 console.log(sortBook(books));
+
+
+29 let range = (start, end) => {
+  return [...Array(end - start).keys()].map((el) => el + start);
+};
+
+console.log(range(1, 10));
+
+
 
 
